@@ -1,16 +1,16 @@
 <template>
-  <div class="flex flex-col flex-no-wrap home">
-    <HomeHeader />
+  <div class="flex flex-no-wrap home">
+    <sidebar />
     <slot />
   </div>
 </template>
 
 <script>
-import HomeHeader from '@/components/headers/HomeHeader.vue';
+import sidebar from '@/components/menu/sidebar.vue';
 
 export default {
   components: {
-    HomeHeader,
+    sidebar,
   },
 };
 </script>
