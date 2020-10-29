@@ -3,6 +3,7 @@
     class="flex lg:px-10 md:px-10 px-5 py-20 flex-col min-h-screen lg:flex-row"
   >
     <div class="flex w-full">
+      <sidebar />
       <div class="flex w-8/12 flex-col">
         <div class="flex mb-5 w-full">
           <input
@@ -58,9 +59,12 @@
 <script>
 import SimpleMDE from 'simplemde';
 import 'simplemde/dist/simplemde.min.css';
+import sidebar from '../components/menu/sidebar.vue';
 
 export default {
-  components: {},
+  components: {
+    sidebar,
+  },
   mounted() {
     // eslint-disable-next-line no-new
     new SimpleMDE({ element: document.getElementById('edithor') });
