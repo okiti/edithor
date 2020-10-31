@@ -1,10 +1,10 @@
 <template>
   <layout>
     <div
-      class="flex lg:px-10 md:px-10 px-5 py-20 flex-col min-h-screen lg:flex-row"
+      class="flex lg:px-10 md:px-10 px-5 py-20 w-full flex-col min-h-screen lg:flex-row"
     >
       <div class="flex w-full">
-        <div class="flex w-8/12 flex-col">
+        <div class="flex w-9/12 flex-col">
           <div class="flex mb-5 w-full">
             <input
               class="text-3xl font-semibold w-full border-none outline-none bg-transparent"

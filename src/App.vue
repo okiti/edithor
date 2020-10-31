@@ -3,6 +3,13 @@
     <router-view />
   </div>
 </template>
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+</style>
 <script>
 export default {
   name: 'App',
