@@ -17,6 +17,7 @@
           <div>
             <a href=""><i class="uil uil-trash-alt"></i></a>
             <a href=""><i class="uil uil-archive-alt"></i></a>
+            <a href="">Oct 31</a>
           </div>
         </li>
         <li class="flex justify-between">
@@ -24,13 +25,17 @@
           <div>
             <a href=""><i class="uil uil-trash-alt"></i></a>
             <a href=""><i class="uil uil-archive-alt"></i></a>
+            <a href="">Oct 31</a>
           </div>
         </li>
         <li class="flex justify-between">
           <a href="">A funny fact about Edithor</a>
-          <div>
-            <a href=""><i class="uil uil-trash-alt"></i></a>
-            <a href=""><i class="uil uil-archive-alt"></i></a>
+          <div class="flex">
+            <div class="icon-holder">
+              <a class="delete-icon"  href=""><i class="uil uil-trash-alt"></i></a>
+              <a href=""><i class="uil uil-archive-alt"></i></a>
+            </div>
+            <a href="">Oct 31</a>
           </div>
         </li>
       </ul></div>
@@ -43,14 +48,30 @@
     a {
       @apply inline-block;
       @apply text-ash;
-      font-size: 26px;
-      font-weight: 600;
+      font-size: 17px;
       padding: 7px 10px;
     }
     a:hover {
       opacity: 0.8;
     }
     border-bottom: 1px solid #eeeeee;
+  }
+  i {
+    color: #969696;
+  }
+  .icon-holder {
+    display: none;
+  }
+  .delete-icon:hover {
+    i {
+      @apply text-red-500;
+    }
+  }
+  li:hover {
+    cursor: pointer;
+  }
+  li:hover .icon-holder {
+    display: flex;
   }
 }
 </style>
